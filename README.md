@@ -51,5 +51,21 @@ Tambien tenemos en el router lo siguiente:
 { path: 'heroe/:id', component: HeroeComponent }
 
 
+LOS PIPES DISPONIBLES EN ANGULAR SON:
 
+* currency
+* date
+* uppercase
+* json
+* limitTo
+* lowercase
+* async
+* decimal
+* percent
 
+Ejemplo de uso:
+< h1>{{ heroe.nombre | uppercase }} < small>{{ heroe.aparicion | date:'y' }}< /small>< /h1>
+
+para no agregar al componente el archivo de prueba
+utilizamos el siguiente comando
+ng g c components/heroetarjeta --spec=false
